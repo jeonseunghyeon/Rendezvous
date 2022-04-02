@@ -6,7 +6,9 @@
 
 
 # Rendezvous
-> 화장품을 소개하는 웹 사이트입니다.
+> 화장품을 소개하는 웹 사이트입니다.<br>
+졸업작품 사이트:https://jeonseunghyeon.github.io/Rendezvous/
+
 
 
 
