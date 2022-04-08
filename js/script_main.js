@@ -22,7 +22,7 @@ $(window).on('scroll resize', function() {
     }
 
     function fixHeader() {
-        if(scrollPos > 50) {$('header').addClass('on');}
+        if(scrollPos > 80) {$('header').addClass('on');}
         else {$('header').removeClass('on');}
     }
 
@@ -43,7 +43,7 @@ $(window).on('scroll resize', function() {
             $('section.approach .inner .list li:eq(2) a').addClass('on');
         }
 
-        if(scrollPos > 2900) {
+        if(scrollPos > 2550) {
             $('section.approach .inner .list li a').removeClass('on');
             $('section.approach .inner .list li:eq(3) a').addClass('on');
         }
@@ -56,5 +56,10 @@ $(function() {
     $('.animate').scrolla({
         mobile: true,
         once:false
-    })
-})
+    });
+});
+
+/*텍스트애니메이션*/ 
+$(function(){
+    Splitting();
+});

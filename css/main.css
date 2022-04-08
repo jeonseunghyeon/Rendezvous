@@ -38,6 +38,7 @@ u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label,
  {
      margin:0;padding:0;
     
+    
 }
 
 a {
@@ -102,7 +103,14 @@ header .inner .logo {
     font-size: 25px;
     letter-spacing: 1px;
     transition: all 0.4s;
+    
 }
+
+header .inner .logo:hover {
+cursor: url(../img/mouse.png) 20 30, auto;
+}
+
+
 
 header .inner .gnbBtn {
     display: block;
@@ -141,6 +149,7 @@ header .inner .contact {
     margin-top: 10px;
 
 }
+
 
 /*header 모션*/
 header .on { 
@@ -351,7 +360,7 @@ section.approach .inner .list li a.on span, section.approach .inner .list li a:h
     text-align: center;
     color: #fff;
     font-size: 35px;
-    font-style: italic;
+    
 }
 
 
@@ -625,3 +634,39 @@ footer .inner .sns li {
     font-size: 17px;
 }
 
+/*텍스트애니메이션*/
+@keyframes textAni {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+}
+
+/*visual 텍스트애니메이션*/
+.visual .title.motion .char {
+    animation: textAni 3s both;
+    animation-delay: calc(0.08s * var(--char-index));
+}
+
+/*.text공통애니메이션*/
+.text.motion .word {
+    animation: textAni 0.8s both;
+    animation-delay: calc(0.02s * var(--word-index));
+}
+
+.text.motion a {
+    animation: border 1s both;
+}
+
+@keyframes border {
+    0%{
+        border-color: transparent;
+    }
+
+    30%{
+        border-color: transparent;
+    }
+}
