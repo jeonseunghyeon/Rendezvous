@@ -208,7 +208,7 @@ header .on .gnbBtn, header.on .contact{
 
 .inner {
     width: 1400px;
-    margin: 335px auto;
+    margin: 0 auto;
 }
 
 /*text => 텍스트 공통*/
@@ -242,10 +242,11 @@ header .on .gnbBtn, header.on .contact{
 .text a:hover , .text a:focus {
 
     border: 1px solid transparent;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid white;
     border-radius: 0;
     padding: 5px 18px;
     transition: all 0.2s;
+    color: white;
     background: #000000;
 }
 
@@ -277,7 +278,7 @@ section.about .inner .text p {
 /*section.approach*/
 section.approach {
     padding: 100px 0;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 section.approach .inner {
@@ -361,94 +362,7 @@ section.service .img.motion {
     }
 }
 
-/*section.journal*/
-section.journal {
-    background: #000000;
-    padding: 350px 0 200px;
-    margin-top: -250px;
-    font-family: 'GowunBatang-Regular';
-    color: white;
-}
 
-section.journal h2 {
-    font-size: 30px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 100px;
-}
-
-section.journal .list {
-    display: flex;
-    justify-content: space-between;
-}
-
-section.journal .list li {
-    width: 330px;
-}
-
-section.journal .list li a {
-
-    display: block;
-}
-section.journal .list li a .img {
-    border-radius: 10px; 
-    overflow: hidden;
-    height: 330px;
-    position: relative;
-
-}
-
-section.journal .list li a .img img {
-    
-    height: 100%;
-    width: auto;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
-
-}
-
-section.journal .list li a h3 {
-    font-size: 15px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin: 30px 0;
-}
-
-section.journal .list li a p {
-    font-size: 16px;
-    line-height: 1.4;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    text-align: justify;
-}
-
-/*section.journal -motion*/
-section.journal .list.motion li {
-    animation-name: journal;
-    animation-duration: 0.5s;
-}
-
-section.journal .list.motion li:nth-child(2) {
-    animation-duration: 0.6s;
-}
-
-section.journal .list.motion li:nth-child(3) {
-    animation-duration: 0.7s;
-}
-
-section.journal .list.motion li:nth-child(4) {
-    animation-duration: 0.8s;
-}
-@keyframes journal {
-    0%{opacity: 0; transform: translateY(200px);}
-    30%{opacity: 0; transform: translateY(200px);}
-}
 
 
 /*footer*/
@@ -457,9 +371,9 @@ footer{
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 200px;
-    background: white;
-    color: #fff;
+    height: auto;
+    background: black;
+    color: white;
     padding: 75px 0;
     box-sizing: border-box;
     z-index: -1;
