@@ -84,7 +84,7 @@ header {
     top: 0;
     left: 0;
     z-index: 100;
-    background: #f5e2e2 ;
+    background: #000000;
     padding: 40px 0 25px;
     color:#fff;
     font-family: 'GowunBatang-Regular';
@@ -208,7 +208,7 @@ header .on .gnbBtn, header.on .contact{
 
 .inner {
     width: 1400px;
-    margin: 0 auto;
+    margin: 335px auto;
 }
 
 /*text => 텍스트 공통*/
@@ -246,15 +246,16 @@ header .on .gnbBtn, header.on .contact{
     border-radius: 0;
     padding: 5px 18px;
     transition: all 0.2s;
-    background: #f2f0eb;
+    background: #000000;
 }
 
 
 /*section.about*/
 section.about {
 
-    background: #f2f0eb;
+    background: #000000;
     padding: 100px 0;
+    color: white;
 
 }
 section.about .inner {
@@ -276,6 +277,7 @@ section.about .inner .text p {
 /*section.approach*/
 section.approach {
     padding: 100px 0;
+    margin-bottom: 50px;
 }
 
 section.approach .inner {
@@ -283,105 +285,11 @@ section.approach .inner {
     position: relative;
 }
 
+
+
+
+
 section.approach .inner .list {
-    width: 48%;
-   
-}
-
-section.approach .inner .list li {
-    margin-bottom: 30px;
-}
-
-section.approach .inner .list li:last-child {
-    margin-bottom: 0;
-}
-
-section.approach .inner .list li a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-}
-
-section.approach .inner .list li a span {
-    display: none;
-}
-
-section.approach .inner .list li a img {
-    width: 100%;
-}
-
-section.approach .inner .fix {
-    position: absolute;
-    width: 45%;
-    height: 100%;
-    
-    right: 0;
-    top: 0;
-}
-
-/*section.approach -모션*/
-
-section.approach .inner .fix .text {
-    position: absolute;
-    bottom: 10%;
-}
-section.approach .inner .fix .text.on {
-
-    position: fixed;
-    bottom: 50%;
-    transform: translateY(50%);
-
-}
-
-
-section.approach .inner .list li a.on:after,  section.approach .inner .list li a:hover::after{
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: rgba(41,41,41,0.3);;
-}
-
-
-section.approach .inner .list li a.on span, section.approach .inner .list li a:hover span {
-  
-    position: absolute;
-    display: block;
-    z-index: 1;
-    width: 100%;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    color: #fff;
-    font-size: 35px;
-    
-}
-
-
-section.approach .inner .list li a.on span b, section.approach .inner .list li a:hover span b {
-    font-family: 'GowunBatang-Regular';
-    font-style: normal;
-
-}
-
-
-
-
-/*section.sectors*/
-section.sectors {
-    background: #f2f0eb;
-    padding: 100px 0 230px;
-    position: relative;
-    margin-bottom: 260px;
-}
-
-section.sectors .list {
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -389,81 +297,32 @@ section.sectors .list {
     left: 50%;
     transform: translateX(-50%);
     bottom: -160px;
+   
 }
 
-section.sectors .list li {
+section.approach .inner .list li {
     width: 31%;
     border-radius: 10px;
     overflow: hidden;
 }
 
-section.sectors .list li a{
+section.approach .inner .list li a{
     display: block;
     position: relative;
 }
 
-section.sectors .list li a img {
+section.approach .inner .list li a img {
     width: 100%;
     transition: all 0.4s;
 }
 
-section.sectors .list li a h3 {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    color: #fff;
-    font-size: 25px;
-    font-family: 'GowunBatang-Regular';
-    letter-spacing: 1px;
-    transition: all 0.4s;
-}
 
-/*section.sectors - 모션*/
 
-section.sectors .list li a:hover img ,
-section.sectors .list li a:focus img{
-    transform: scale(1.2);
-    transition: all 1s;
-}
-
-section.sectors .list li a:hover h3,
-section.sectors .list li a:focus h3 {
-    letter-spacing: 4px;
-    transition: all 0.5s;
-}
-
-section.sectors .list.motion li {
-    animation-name: sectors;
-    animation-duration: 1s;
-}
-
-section.sectors .list.motion li:nth-child(2) {
-    animation-duration: 1.15s;
-
-}
-
-section.sectors .list.motion li:nth-child(3) {
-    animation-duration: 1.3s;
-
-}
-
-@keyframes sectors {
-    0% {
-        opacity: 0;
-        transform: translateX(1000px);
-    }
-
-   30% {
-        opacity: 0;
-        transform: translateX(1000px);
-    }
-}
 
 /*section.service*/
 
 section.service {
-    padding: 100px 0;
+    padding: 7px 0;
 }
 
 section.service .inner {
@@ -504,10 +363,11 @@ section.service .img.motion {
 
 /*section.journal*/
 section.journal {
-    background: #f2f0eb;
+    background: #000000;
     padding: 350px 0 200px;
     margin-top: -250px;
     font-family: 'GowunBatang-Regular';
+    color: white;
 }
 
 section.journal h2 {
@@ -598,7 +458,7 @@ footer{
     bottom: 0;
     width: 100%;
     height: 200px;
-    background: #213135;
+    background: white;
     color: #fff;
     padding: 75px 0;
     box-sizing: border-box;
