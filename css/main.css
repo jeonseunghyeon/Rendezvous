@@ -28,6 +28,7 @@
 *{
     padding: 0;
     margin: 0;
+    
 }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
@@ -276,12 +277,12 @@ section.about .inner .text p {
 
 
 /*section.approach*/
-section.approach {
-    padding: 100px 0;
-    margin-bottom: 20px;
+section.journal {
+    padding: 50px 0;
+    margin-bottom: 250px;
 }
 
-section.approach .inner {
+section.journal .inner {
     
     position: relative;
 }
@@ -290,10 +291,10 @@ section.approach .inner {
 
 
 
-section.approach .inner .list {
+section.journal .inner .list {
     display: flex;
     justify-content: space-between;
-    position: absolute;
+    position: relative;
     width: 1400px;
     left: 50%;
     transform: translateX(-50%);
@@ -301,18 +302,18 @@ section.approach .inner .list {
    
 }
 
-section.approach .inner .list li {
+section.journal .inner .list li {
     width: 31%;
     border-radius: 10px;
     overflow: hidden;
 }
 
-section.approach .inner .list li a{
+section.journal .inner .list li a{
     display: block;
     position: relative;
 }
 
-section.approach .inner .list li a img {
+section.journal .inner .list li a img {
     width: 100%;
     transition: all 0.4s;
 }
