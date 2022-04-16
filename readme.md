@@ -5,8 +5,8 @@
 3. 설유진(팀원) - 디자인
 
 
-# Rendezvous
-> 화장품을 소개하는 웹 사이트입니다.<br>
+# 여우별
+> 의류 편집샵 웹 사이트입니다.<br>
 졸업작품 사이트:https://jeonseunghyeon.github.io/Rendezvous/
 
 
