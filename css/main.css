@@ -24,6 +24,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,400&display=swap');
 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
 /*reset*/
 *{
     padding: 0;
@@ -88,7 +92,7 @@ header {
     background: #000000;
     padding: 40px 0 25px;
     color:#fff;
-    font-family: 'GowunBatang-Regular';
+    font-family: 'Black Han Sans';
     font-weight: bold;
     text-align: center;
     transition: all 0.4s;
@@ -316,6 +320,12 @@ section.journal .inner .list li a{
 section.journal .inner .list li a img {
     width: 100%;
     transition: all 0.4s;
+}
+
+section.journal .inner .list li a h1 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 55px;
 }
 
 
