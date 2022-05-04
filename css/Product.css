@@ -184,6 +184,11 @@ header .on .gnbBtn, header.on .contact{
     justify-content: center;
 }
 
+.contents .Product h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
 .card {
 
 	height: 400px;
@@ -390,7 +395,7 @@ footer{
     color: white;
     padding: 75px 0;
     box-sizing: border-box;
-    z-index: -1;
+    z-index:-1;
 }
 
 footer .inner {
